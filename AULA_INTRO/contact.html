@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="pages.css" media="screen">
+
+    <title>Contact</title>
+</head>
+<body>
+    <!-- MENU -->
+    <header class="nav-menu">
+        <h1 id="nav-title"><a href="home.html">Julinho Guitars</a></h1>
+        <nav>
+            <ul>
+                <li class="redirect">
+                    <a target="_blank" href="home.html">Home<a>
+                </li>
+
+                <li class="redirect">
+                    <a target="_blank" href="guitars.html">Guitars</a>
+                </li>
+                
+                <li class="redirect">
+                    <a target="_blank" href="#">Guitarists</a>
+                </li>
+
+                <li class="redirect">
+                    <a target="_blank" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>    
+    </header>
+
+    <section class="form" class="center">
+        <div class="input-fields">
+            <fieldset class="field">
+                <label for="name">Your name: </label>
+                <input type="text" id="name" onkeyup='nameValidate()'>
+                <div id="txtName"></div>                
+            
+                <label for="email">Your email adress: </label>
+                <input type="email" id="email" onkeyup="emailValidate()">
+                <div id="txtEmail"></div>
+
+                <label for="subject">Subject: </label>
+                <textarea name="subject" id="subject" cols="40" rows="5" onkeyup="subjectValidate()"></textarea>    
+                <div id="txtSubject"></div>            
+
+            </fieldset>
+        </div>
+
+        <button onclick="submit()">Submit</button>
+    </section>
+
+    <div class="center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7308.619967031802!2d-46.4688681954277!3d-23.664870081694772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce696841ad3a39%3A0xe62bb63854092506!2sMau%C3%A1%20Plaza%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1653570000249!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></h1>
+    </div>
+
+    <footer class="center">
+        <div>
+        <a target="_blank" href="github.com/julioconceicao">
+            <img class="tm" src="./assets/images/github.png" alt="github">
+        </a>
+
+        <a target="_blank" href="https://www.instagram.com/julio_.gc/">
+            <img class="tm" src="./assets/images/instagram.png" alt="instagram">
+        </a>
+        
+        <a target="_blank" href="https://www.linkedin.com/in/juliocesargoncalvesconceicao/">
+            <img class="tm" src="./assets/images/linkedin.png" alt="linkedin">
+        </a>
+        </div>
+        <div>
+        Copyright: Julio César G. Conceição &copy;
+        </div>
+    </footer>
+</body>
+<script src="assets/js/script.js"></script>
+</html> 
+    
